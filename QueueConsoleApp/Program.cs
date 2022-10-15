@@ -16,14 +16,14 @@ namespace QueueConsoleApp
             //string base64 = Convert.ToBase64String(Encoding.UTF8.GetBytes("mcelebi"));
             //azureQueue.SendMessageAsync(base64).Wait();
 
-            var message = azureQueue.RetrieveNextMessageAsync().Result;
+            //var message = azureQueue.RetrieveNextMessageAsync().Result;
             //string text = Encoding.UTF8.GetString(Convert.FromBase64String(message.MessageText));
 
             //Console.WriteLine("Mesaj " + text);
 
-            await azureQueue.DeleteMessageAsync(message.MessageId, message.PopReceipt);
+            //await azureQueue.DeleteMessageAsync(message.MessageId, message.PopReceipt);
 
-            Console.WriteLine("Mesaj silindi");
+            //Console.WriteLine("Mesaj silindi");
         }
     }
 }
